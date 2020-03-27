@@ -1,7 +1,12 @@
-## extra-durable android-database-sqlcipher with JAR build support
+## android-database-sqlcipher-connection-core JAR build
 
-- able to build JARs, as documented below
+to build Android NDK JAR for the demo Cordova plugin in the sqlite-crypto-connection-core-preview project
+
+based on sqlcipher/android-database-sqlcipher (v4.3.0), with additional enhancment(s) by @brodybits:
+
 - extra durable with `-DSQLITE_DEFAULT_SYNCHRONOUS=3` build setting in `build.gradle`
+
+XXX TODO: remove android.database Java and C++ sources not needed
 
 <!-- NOT SUPPORTED with JAR build:
 ### Download Source and Binaries
@@ -51,6 +56,7 @@ Error: file is encrypted or is not a database
 ```
 (example courtesy of SQLCipher)
 
+<!-- N/A
 ### Application Integration
 
 You have a two main options for using SQLCipher for Android in your app: 
@@ -123,6 +129,7 @@ in the passphrase as a `char[]` or `byte[]`
 The rest of your code may not need any changes.
 
 An article covering both integration of SQLCipher into an Android application as well as building the source can be found [here](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/).
+- -->
 
 ### Building
 
@@ -138,14 +145,15 @@ make build-debug
 make build-release
 ```
 
-### SQLCipher JARs
+### Building the JAR
 
-to build SQLCipher as JARs (which will automatically include the prerequisite `init` and `build-release` make tasks):
+to build the Android NDK JAR (which will automatically include the prerequisite `init` and `build-release` make tasks):
 
 ```
 make jars
 ```
 
+<!-- N/A
 **Important:** When using JAR files or some other local build, it is required to include a recent `androidx.sqlite` artifact from here: <https://mvnrepository.com/artifact/androidx.sqlite/sqlite>
 
 This may done by adding the following block from `android-database-sqlcipher/build.gradle`, as discussed in [sqlcipher/android-database-sqlcipher#475](https://github.com/sqlcipher/android-database-sqlcipher/issues/475):
@@ -157,7 +165,8 @@ This may done by adding the following block from `android-database-sqlcipher/bui
 ```
 
 It is recommended to consider using a newer `androidx.sqlite` version such as `2.1.0`.
+- -->
 
 ### License
 
-The Android support libraries are licensed under Apache 2.0, in line with the Android OS code on which they are based. The SQLCipher code itself is licensed under a BSD-style license from Zetetic LLC. Finally, the original SQLite code itself is in the public domain.
+The Android support ~~libraries~~ __build scripts__ are licensed under Apache 2.0, in line with the Android OS code on which they are based. The SQLCipher code itself is licensed under a BSD-style license from Zetetic LLC. Finally, the original SQLite code itself is in the public domain.
