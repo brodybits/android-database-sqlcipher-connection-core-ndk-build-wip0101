@@ -2,6 +2,8 @@
 
 with SCCoreGlue JNI/NDK from: [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101)
 
+with support available here: <https://github.com/brodybits/ask-me-anything/issues>
+
 based on [`github:sqlcipher/android-database-sqlcipher`](https://github.com/sqlcipher/android-database-sqlcipher) (v4.3.0), with `android.database.sqlite` C++ and Java classes removed
 
 with additional enhancment(s) by @brodybits from [`github:brodybits/android-database-sqlcipher#v4.3.x-extra-durable-jar-build`](https://github.com/brodybits/android-database-sqlcipher/tree/v4.3.x-extra-durable-jar-build):
