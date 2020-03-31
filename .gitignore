@@ -14,3 +14,6 @@ android-database-sqlcipher/src/main/cpp/sqlite3.[c,h]
 local.properties
 *.jar
 lib
+cordova-demo/node*
+cordova-demo/package-lock.json
+cordova-demo/pl*

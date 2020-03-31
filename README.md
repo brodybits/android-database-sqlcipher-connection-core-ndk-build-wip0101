@@ -9,6 +9,8 @@ with additional enhancment(s) by @brodybits from [`github:brodybits/android-data
 - able to build JARs, as documented below
 - extra durable with `-DSQLITE_DEFAULT_SYNCHRONOUS=3` build setting in `build.gradle`
 
+with Apache Cordova demo app in `cordova-demo` from: [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101) (see [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101) for some quick instructions)
+
 <!-- NOT SUPPORTED with JAR build:
 ### Download Source and Binaries
 
