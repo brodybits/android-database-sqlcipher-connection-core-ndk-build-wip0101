@@ -2,3 +2,6 @@
 	path = android-database-sqlcipher/src/main/external/sqlcipher
 	url = https://github.com/sqlcipher/sqlcipher.git
 	ignore = untracked
+[submodule "android-database-sqlcipher/src/main/external/sqlite-fauxcrypt-batch-connection-core-preview-wip0101"]
+	path = android-database-sqlcipher/src/main/external/sqlite-fauxcrypt-batch-connection-core-preview-wip0101
+	url = https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101

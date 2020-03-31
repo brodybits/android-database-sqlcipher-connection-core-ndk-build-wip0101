@@ -6,7 +6,7 @@ GRADLE = ./gradlew
 # for NDK JAR build:
 JNI_LIB_BUILD_PATH = android-database-sqlcipher/build/intermediates/transforms/stripDebugSymbol/release/0/lib
 CLEAN_NDK_JAR_BUILD = rm -rf lib *.jar
-JNI_LIB_JAR_FILENAME = android-database-sqlcipher-core-ndk.jar
+JNI_LIB_JAR_FILENAME = android-database-sqlcipher-connection-core-glue-ndk.jar
 
 init:
 	git submodule update --init

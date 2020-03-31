@@ -44,6 +44,7 @@ android {
     editorconfig {
         excludes = ['src/main/cpp/sqlite3.*',
                     'src/main/external/sqlcipher/**',
+                    'src/main/external/sqlite-*-core-*/**',
                     'src/main/external/openssl-*/**']
     }
 
