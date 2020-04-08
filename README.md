@@ -8,7 +8,7 @@ based on [`github:sqlcipher/android-database-sqlcipher`](https://github.com/sqlc
 
 with additional enhancment(s) by @brodybits from [`github:brodybits/android-database-sqlcipher#v4.3.x-extra-durable-jar-build`](https://github.com/brodybits/android-database-sqlcipher/tree/v4.3.x-extra-durable-jar-build):
 
-- able to build JARs, as documented below
+- able to build JAR, as documented below
 - extra durable with `-DSQLITE_DEFAULT_SYNCHRONOUS=3` build setting in `build.gradle`
 
 with Apache Cordova demo app in `cordova-demo` from: [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101) (see [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101) for some quick instructions)
@@ -150,12 +150,12 @@ make build-debug
 make build-release
 ```
 
-### SQLCipher JARs
+### SQLCipher JAR
 
-to build SQLCipher as JARs (which will automatically include the prerequisite `init` and `build-release` make tasks):
+to build SQLCipher as a single JAR (which will automatically include the prerequisite `init` and `build-release` make tasks):
 
 ```
-make jars
+make jar
 ```
 
 <!-- N/A:
