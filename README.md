@@ -11,7 +11,7 @@ with additional enhancment(s) by @brodybits from [`github:brodybits/android-data
 - able to build JAR, as documented below
 - extra durable with `-DSQLITE_DEFAULT_SYNCHRONOUS=3` build setting in `build.gradle`
 
-with Apache Cordova demo app in `cordova-demo` from: [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101) (see [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101) for some quick instructions)
+with Apache Cordova demo app in `cordova-demo` (more info with quick instructions below), adapted from: [`github:brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101`](https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101)
 
 <!-- NOT SUPPORTED with JAR build:
 ### Download Source and Binaries
@@ -171,6 +171,40 @@ This may done by adding the following block from `android-database-sqlcipher/bui
 
 It is recommended to consider using a newer `androidx.sqlite` version such as `2.1.0`.
 - -->
+
+### Apache Cordova demo app
+
+#### General info
+
+See the following for the demo JavaScript and expected Cordova batch results:
+
+- https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101#apache-cordova-demo-app
+
+#### Original source of the demo app
+
+- https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101/tree/master/cordova-demo
+
+#### Running Cordova demo
+
+prerequisites:
+
+- tested on macOS host only
+- install Apache Cordova using npm (`npm i -g cordova`)
+- install Android SDK & NDK
+
+how:
+
+- do `make jar` to build `android-database-sqlcipher-connection-core-glue-ndk.jar` as described above (as I said before, `make jar` would automatically include a couple of other prerequisite steps)
+- `cd cordova-demo`
+- `make prepare-app`
+- recommended: do `cordova plugin ls` to check that the demo plugin was added (will show a "cordova sqlite demo plugin", with no indication that it is really SQLCipher)
+- `(cordova platform add android && cordova run android)`
+
+#### Expected results
+
+described here:
+
+- https://github.com/brodybits/sqlite-fauxcrypt-batch-connection-core-preview-wip0101#expected-cordova-batch-results
 
 ### License
 
