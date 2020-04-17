@@ -1,4 +1,8 @@
-## extra-durable android-database-sqlcipher core NDK JAR build
+## extra-durable android-database-sqlcipher crypto-connection-core NDK build
+
+with SCCoreGlue API support built from the JNI/NDK source here: [`github:brodybits/sqlite-fake-crypto-batch-connection-core-preview-wip0111`](https://github.com/brodybits/sqlite-fake-crypto-batch-connection-core-preview-wip0111)
+
+with support available here: <https://github.com/brodybits/ask-me-anything/issues>
 
 based on [`github:sqlcipher/android-database-sqlcipher`](https://github.com/sqlcipher/android-database-sqlcipher) (v4.3.0), with `android.database.sqlite` C++ and Java classes removed
 
