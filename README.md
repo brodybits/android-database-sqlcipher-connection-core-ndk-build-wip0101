@@ -11,6 +11,8 @@ with additional enhancment(s) by @brodybits from [`github:brodybits/android-data
 - able to build NDK JAR, as documented below
 - extra durable with `-DSQLITE_DEFAULT_SYNCHRONOUS=3` build setting in `build.gradle`
 
+Demo Cordova plugin with this Android NDK build can be built and tested from here: [`github:brodybits/cordova-sqlcipher-crypto-batch-connection-core-android-build-wip0001`](https://github.com/brodybits/cordova-sqlcipher-crypto-batch-connection-core-android-build-wip0001)
+
 <!-- NOT SUPPORTED with JAR build:
 ### Download Source and Binaries
 
