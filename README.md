@@ -1,6 +1,6 @@
 ## extra-durable android-database-sqlcipher crypto-connection-core NDK build
 
-with SCCoreGlue API support built from the JNI/NDK source here: [`github:brodybits/sqlite-fake-crypto-batch-connection-core-preview-wip0111`](https://github.com/brodybits/sqlite-fake-crypto-batch-connection-core-preview-wip0111)
+with SCCoreGlue API support built from the JNI/NDK source here: [`github:brodybits/sqlite-fake-crypto-batch-connection-core-preview-wip0111#d2ca6511`](https://github.com/brodybits/sqlite-fake-crypto-batch-connection-core-preview-wip0111/tree/d2ca65115f018974f93b4744ecd320d927948ab4)
 
 with support available here: <https://github.com/brodybits/ask-me-anything/issues>
 
