@@ -3,20 +3,20 @@
 	publish-local-release publish-remote-snapshot public-remote-release check
 GRADLE = ./gradlew
 
-# for NDK JAR build:
+# for JAR build:
 JNI_LIB_BUILD_PATH = android-database-sqlcipher/build/intermediates/transforms/stripDebugSymbol/release/0/lib
-CLEAN_NDK_JAR_BUILD = rm -rf lib *.jar
+CLEAN_JAR_BUILD = rm -rf lib *.jar
 JNI_LIB_JAR_FILENAME = android-database-sqlcipher-crypto-connection-core-glue-ndk.jar
 
 init:
 	git submodule update --init
 
 clean:
-	$(CLEAN_NDK_JAR_BUILD)
+	$(CLEAN_JAR_BUILD)
 	$(GRADLE) clean
 
 distclean:
-	$(CLEAN_NDK_JAR_BUILD)
+	$(CLEAN_JAR_BUILD)
 	$(GRADLE) distclean
 
 build-openssl:
@@ -36,9 +36,9 @@ build-release: check
 	$(GRADLE) android-database-sqlcipher:bundleReleaseAar \
 	-PdebugBuild=false
 
-# NDK JAR build:
+# JAR build:
 jar: init build-release
-	$(CLEAN_NDK_JAR_BUILD)
+	$(CLEAN_JAR_BUILD)
 	cp -r $(JNI_LIB_BUILD_PATH) .
 	jar cf $(JNI_LIB_JAR_FILENAME) lib
 
