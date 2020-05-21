@@ -159,9 +159,11 @@ make build-debug
 make build-release
 ```
 
-### SQLCipher JAR
+### JAR build
 
-to build SQLCipher as one NDK JAR (which _automatically includes_ the prerequisite `init` and `build-release` make tasks):
+to build as a single JAR: `make jar`
+
+Note that the make `jar` target **automatically includes** the prerequisite `init` and `build-release` make targets.
 
 ```
 make jar
